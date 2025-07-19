@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cotainer">
+        <div class="box"> i am box</div>
+    </div>
+    <button id="btn">change data</button>
+    <script>
+        let button=document.querySelector("#btn")
+        // button.addEventListener("click",()=>{
+        //     document.querySelector(".box").innerHTML="nanara aa box"
+        // })
+        // button.addEventListener("dblclick",()=>{
+        //     document.querySelector(".box").innerHTML="nanara aa box"
+        // })
+//         button.addEventListener("contextmenu",()=>{
+// alert("hi naku vote vayandi please")        
+// })
+document.addEventListener("keydown",(e)=>{
+    console.log(e,e.key,e.keyCode)
+})
+
+    </script>
+</body>
+</html>

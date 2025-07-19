@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-fullview.jpg);
+    height: 90vh;
+    background-position: center center;
+    /*for focus image*/
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    /*it takes which one bigger either 1200px or 100vw based on screen*/
+    position: relative;
+}
+
+nav {
+    /* background-color: red; */
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    /* to fill it red write in svg code fill="red" */
+    color: red;
+    width: 140px;
+    position: relative;
+    z-index: 20;
+    /* z-index controls the stacking order of elements along the z-axis — which is the imaginary line going in and out of the screen.
+Higher z-index = Comes in front.
+Lower z-index = Goes behind. */
+}
+
+nav button {
+    position: relative;
+    z-index: 40;
+
+}
+
+.main .box {
+    height: 90vh;
+    width: 100%;
+    opacity: 0.44;
+    position: absolute;
+    /* for nav aansadi image lo kalisi povadaniki */
+    top: 0;
+    background-color: black;
+}
+
+.hero {
+    color: white;
+    /* height: 100%; */
+    /*for considering seperation line we wpdate */
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: large;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+/* .hero :first-child{
+    font-weight: 800;
+    font-size: 48px;
+} */
+/* or   */
+.hero> :nth-child(1) {
+    font-weight: 800;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.seperation {
+    height: 7px;
+    background-color: gray;
+    position: relative;
+    z-index: 20px;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-size: bolder;
+    background-color: rgba(255, 255, 255, 0.225);
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.red-signin {
+    background-color: red;
+    color: white;
+}
+
+.red-started {
+    background-color: red;
+    color: white;
+    font-weight: 400;
+    padding: 4px 25px;
+    font-size: 25px;
+    border-radius: 30px;
+}
+
+.main input {
+    color: white;
+    padding: 9px 101px 9px 16px;
+    font-size: 13px;
+    font-weight: 900;
+    border-radius: 30px;
+    /* opacity: 0.50; */
+    background-color: rgba(23, 23, 23, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.54);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 50vh;
+    /* max-width sets the maximum width of an element. The element can shrink to fit the screen,
+    but it won’t grow beyond this value.
+     This means: "Dear browser, never let this .container go wider than 800px, no matter how wide the screen is." */
+    margin: auto;
+    color: white;
+    justify-content: center;
+   align-items: center;
+   /* flex-wrap: wrap; */
+
+}
+
+
+ .secImg {
+    position: relative;
+}
+.secImg img{
+    width: 420px;
+    height: 40vh;
+    margin-left: 350px;
+    position: relative;
+    z-index: 0.1;
+}
+.secImg video{
+    position: absolute;
+    left: 450px;
+    /* right: 87px; */
+    top: 35px;
+    width: 200px;
+    height: 105px;
+    overflow: hidden;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    white-space: nowrap;
+    padding: 34px 0px;
+}
+.text :nth-child(1){
+    font-size: 48px;
+    font-weight: bold;
+}
+.text :nth-child(2){
+    font-size: 24px;
+    
+}
+.second{
+    display: flex;
+    justify-content: center;
+    max-width: 50vh;
+    /* max-width sets the maximum width of an element. The element can shrink to fit the screen,
+    but it won’t grow beyond this value.
+     This means: "Dear browser, never let this .container go wider than 800px, no matter how wide the screen is." */
+    margin: auto;
+    color: white;
+    justify-content: center;
+   align-items: center;
+
+
+}
+.sec2Img {
+    position: relative;
+}
+.sec2Img img {
+    width: 30vw;
+    height: 40vh;
+    margin-right: 659px;
+    position: relative;
+    z-index: 0.1;
+    position: relative;
+}
+.text2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+    right: 600px;
+}
+.text :nth-child(1){
+    font-size: 48px;
+    font-weight: bold;
+}
+.text :nth-child(2){
+    font-size: 24px;
+    
+}
+.text2 :nth-child(1){
+    font-size: 48px;
+    font-weight: bold;
+}
+.text2 :nth-child(2){
+    font-size: 24px;
+    
+}
+.faq{
+    background-color: black;
+    color: white;
+    padding: 34px;
+    
+    
+    
+}
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.faqbox{
+    transition: all 2s ease-out;
+    background-color: rgba(128, 128, 128, 0.501);
+    color: white;
+    display: flex;
+    padding: 24px;
+    max-width: 60vw;
+    margin:24px auto;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+.faqbox:hover{
+    background-color: rgba(255, 0, 0, 0.142);
+}
+.faqbox img{
+    filter: invert(1);
+}
+footer{
+    color: white;
+    max-width: 60vw;
+    margin:auto;
+    padding: 24px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:1300px){
+    
+    .first{
+        flex-wrap: wrap;
+    }
+    .second{
+        flex-wrap: wrap;
+    }
+    .secImg img{
+        width: 150px;
+       
+    }
+    .secImg video{
+        
+        width: 150px;
+        
+    }
+    
+}
+@media screen and (max-width:1300px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+}
+.footer .aaa{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+}
+.footer a{
+    color: white;
+}
+footer .msd{
+    padding: 34px 0px;
+}

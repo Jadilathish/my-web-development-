@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /* .box{
+            display: inline;
+            padding: 23px;} */
+        .boxs{
+            display: flex;
+
+        }
+        .box{
+            border: 2px solid blue;
+            margin: 5px;
+            padding: 5px;
+        }
+        
+        header{
+            position: sticky;
+            top: 0;
+        }
+        nav{
+            
+        border: 2px solid red;
+        padding: 23px;
+        background-color: aqua;
+        
+            
+            
+        }
+        article{
+            border: 2px solid rgb(26, 134, 89);
+            background-color: rgb(1, 1, 1);
+            height: 80vh;
+            /* position: relative; */
+            
+        }
+
+        .cards{
+            border: 2px solid yellow;
+            min-height: 60vh;
+            margin: 50px;
+            background-color: blue;
+        
+           
+        }
+       .card1{
+            
+           background-color: palevioletred;
+    height: 70vh;
+    width: 45%;
+    display: inline-block;
+    margin: 0 12px;
+        }
+        .card2{
+            
+           background-color: rgb(112, 216, 133);
+    height: 70vh;
+    width: 45%;
+    display: inline-block;
+    margin: 0 12px;
+        }
+        article section{
+        position: fixed;
+        align-self: flex-end; /* Align the emoji section to the end of the cross axis */
+        margin-right: 20px;
+        right: 20px;
+        }
+        
+        main{
+            border: 2px solid orange;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+        }
+        footer{
+            border: 2px solid rgb(0, 226, 113);
+            border-radius: 10px;
+            margin: 2px;
+            padding: 20px;
+            text-align: center;
+            color: red;
+            background-color: black;
+        }
+        
+        
+        
+
+    </style>
+</head>
+<body>
+    <header class="hi">
+        <nav>
+            <div class="boxs">
+                <div class="box">home</div>
+                <div class="box">content</div>
+                <div class="box">about</div>
+                <div class="box">form</div>
+                <div class="box">contact</div>
+            </div>
+        </nav>
+    </header>
+    <article>
+        <div class="cards">
+          <div class="card1">hi</div>
+          <div class="card2">bye</div>
+        <section>😂</section>
+        </div>
+    </article>
+    <main>
+        <div>
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ab sit, est itaque consequatur repudiandae doloribus placeat omnis at aperiam, rerum reiciendis dolorum nobis unde, optio earum reprehenderit necessitatibus suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus rem alias architecto natus libero sequi ex assumenda, quis impedit sint quidem doloribus sunt odio rerum delectus labore id soluta cum!
+        </div>
+    </main>
+    <footer>&copy; all right reserved </footer>
+</body>
+</html>

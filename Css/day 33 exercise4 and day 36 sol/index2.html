@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color:blue;
+            --seccol:aqua;
+            --text-color:red;
+        }
+        body{
+            background-color:var(--color)
+        }
+        .abc{
+            display: flex;
+            border: 2px solid brown;
+            background-color: var(--seccol);
+            text-decoration: none;
+            list-style: none;
+            
+            
+        }
+        ul li{
+            padding: 20px;
+            /* border: 2px solid; */
+            color: var(--text-color);
+
+        }
+        ul li a{
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="abc">
+                <li><a href="index.html">home</a></li>
+                <li><a href="/">menu</a></li>
+                <li><a href="/">contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box:first-child{
+            color: aqua;
+        }
+        .box::first-letter{
+            background-color: rgb(140, 165, 42);
+        }
+        .box::first-line{
+            background-color: rgb(75, 42, 165);
+        }
+        .box:nth-child(2){
+            background-color: black;
+        }
+        .box:nth-last-child(1){
+            color: rgb(81, 255, 0);
+        }
+        .box::before{
+            content: "hi iam lathish";
+        
+        }
+        .box::after{
+            content: "hi iam man";
+        
+        }
+        ::selection{
+            color: yellow;
+            background-color: beige;
+        }
+        input{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">    name</div>
+        <div class="box" >     age</div>
+        <div class="box">      about</div>
+    </div>
+    <input type="text" placeholder="enter the name">
+</body>
+</html>

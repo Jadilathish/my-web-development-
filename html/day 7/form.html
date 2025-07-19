@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">fill the form</h1>
+    <form action="/search" method="post">
+        <div style="text-align: center;">
+
+            <div>
+                
+                <label for="name">name:</label>
+                <input type="text" name="name" id="name" placeholder="name" autofocus>
+            </div>
+            <div>
+                <label for="age">age</label>
+                <input type="number" name="age" id="age" autofocus>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="gender" value="male">
+                <label for="male">male</label>
+                <input type="radio" name="gender" id="gender" value="female">
+                <label for="female">female</label>
+                
+            </div>
+        <div>
+            <input type="checkbox" name="checkbox" id="charset">
+            <label for="cheak">cheak</label>
+        </div>
+        <div>
+            
+            <label for="comment">comment</label>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+        
+        <select name="fruits" >
+            <option value="apple">apple</option>
+            <option value="orange">orange</option>
+            <option value="dhoni">dhoni</option>
+            <option value="virat">virat</option>
+        </select>
+        
+    </div>
+        <div style="text-align: center;">
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</body>
+
+</html>

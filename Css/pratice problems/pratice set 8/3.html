@@ -1,0 +1,46 @@
+<!-- create a rotating image using css -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image{
+            border: 2px solid ;
+            text-align: center;
+            width: 50vw;
+            margin:100px 300px;
+            animation: lathish 3s ease-in-out 2s 5  normal forwards;
+            
+            
+
+        }
+        @keyframes lathish {
+            0%{
+                rotate: 0deg;
+            }
+            20%{
+                rotate: 20deg;
+            }
+            40%{
+                rotate:40deg;
+            }
+            60%{
+                rotate:60deg;
+            }
+            80%{
+                rotate:80deg;
+            }
+            100%{
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="Fresh_Apple.png" alt="">
+    </div>
+</body>
+</html>

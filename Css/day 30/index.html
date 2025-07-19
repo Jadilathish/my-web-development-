@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --color: rgb(165, 165, 184);
+            --seccolor: red;
+            --dipad: 20px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .nav {
+            background-color: var(--color);
+        }
+
+        ul {
+
+            display: flex;
+        }
+
+        ul li {
+            padding: var(--dipad);
+
+        }
+
+        ul li:first-child {
+            /* background-color: var(--seccolor); */
+        }
+
+        .continer {
+            background-color: var(--seccolor);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul style="text-decoration: none;">
+            <li>name</li>
+            <li>age</li>
+            <li>about</li>
+        </ul>
+    </div>
+    <div class="continer">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, optio! Repellendus sed quisquam deserunt.
+        Reprehenderit, facere ea quisquam dicta hic a esse obcaecati.
+    </div>
+</body>
+
+</html>

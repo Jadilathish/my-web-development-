@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --color:orange;
+            --seccolor:green;
+            --pad:50px;
+
+        }
+        .nav{
+            --color:red;
+
+            background-color: var(--color);
+            
+        }
+        ul{
+            display: flex;
+            /* padding: 5px; */
+        }
+        ul li{
+            padding: var(--pad);
+            /* background-color: blue; */
+            border: 3px solid var(--seccolor);
+            width: 80vh;
+        }
+        .container{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>name</li>
+            <li>age</li>
+            <li>phone</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat neque deserunt error! Sed quasi, eius nulla
+            natus, est labore impedit eveniet officiis sit, ex voluptas deserunt sint iure veritatis ad!</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+            border: 2px solid red;
+            background-color: brown;
+            margin: auto;
+            padding: 43px;
+            cursor: pointer;
+        }
+        .containerbox{
+            border: 2px solid red;
+            background-color: rgb(42, 165, 161);
+            margin: auto;
+            padding: 43px;
+            cursor: pointer;
+
+        }
+    .container{
+        border: 2px solid red;
+            background-color: rgb(165, 42, 122);
+            margin: auto;
+            padding: 43px;
+            cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="containerbox">
+            <div class="child">i am box</div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click",(e)=>{
+            e.stopPropagation()
+            alert("hi i am lathish child")
+        })
+        document.querySelector(".containerbox").addEventListener("click",(e)=>{
+            e.stopPropagation()                                                                                                                            
+            alert("hi i am contaner child")
+        })
+        document.querySelector(".container").addEventListener("click",()=>{
+            alert("hi i am container")
+        })
+        function random() {
+
+            let a=Math.ceil(0+Math.random()*255);
+            let b=Math.ceil(0+Math.random()*255);
+            let c=Math.ceil(0+Math.random()*255);
+            return `rgb(${a},${b},${c})`
+        }
+        let d=setInterval(()=>{
+            document.querySelector(".containerbox").style.background=random();
+        },1000);
+        let e=setTimeout(()=>{
+            document.querySelector(".container").style.background=random();
+        },1000);
+
+
+    </script>
+    
+</body>
+</html>

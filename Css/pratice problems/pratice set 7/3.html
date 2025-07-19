@@ -1,0 +1,42 @@
+<!-- create a web site green for larger devices red for mediam and yellow for small -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+        @media screen and (max-width:500px){
+            main{
+
+                background-color: yellow;
+                height: 100vh;
+                width: 100vw;
+            }
+        }
+        @media  (min-width:600px) and (max-width:1024px){
+            main{
+
+                background-color: red;
+                height: 100vh;
+                width: 100vw;
+            }
+        }
+        @media screen and (min-width:1025px){
+            main{
+
+                background-color:green;
+                height: 100vh;
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+    </main>
+</body>
+</html>

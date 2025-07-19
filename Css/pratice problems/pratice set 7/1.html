@@ -1,0 +1,68 @@
+<!-- create a header with content using css grid -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', sans-serif;
+        }
+        header{
+            border: 2px solid ;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img{ 
+            margin-left: 20px;
+            height: 50px;
+            width: 50px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+        }
+        a{
+            text-decoration: none;
+        }
+        .login button{
+            margin-left: 150px;
+            /* border: 2px solid black; */
+            border-radius: 50px;
+            background-color: red;
+            height: 30px;
+            width: 80px;
+
+        }
+        main{
+            border: 2px solid red;
+            width: 98.5vw;
+            height: 80vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Fresh_Apple.png" alt="">
+        </div>
+        
+
+        <nav>
+         <a href="home">home</a>
+        <a href="about">about</a>
+        <a href="content">content</a>
+        </nav>
+        <div class="login">
+            <button>login</button>
+
+        </div>
+    </header>
+    <main>
+
+    </main>
+</body>
+</html>

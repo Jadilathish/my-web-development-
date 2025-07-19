@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            background-color: blueviolet;
+            height: 90vh;
+            width: 80vw;
+        }
+        .box{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            /* animation-name: lathish; */
+            /* animation: lathish 3s ease-in-out 2s 3 forwards both ; */
+            /* animation-duration: 3s; */
+            /* animation-iteration-count: 3; */
+            /* animation-delay: 2s; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-direction:reverse; */
+            /* animation-play-state: paused; */ /* not use it, it is only for stopping */
+            /* animation-fill-mode: backwards; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation:lathish 3s ease-in-out 2s 3 reverse ,
+                      haa 3s ease-in-out 2s 3 ; */
+            animation: haa 3s ease-in-out 2s 3 normal;
+        }
+        /* @keyframes lathish {
+            from{
+                background-color: blue;
+            }
+            to{
+                background-color: rgb(219, 21, 67);
+                transform: translate(500px);
+            }
+            
+        } */
+         @keyframes haa { 
+            
+             0%{
+                transform: rotate(40deg);
+                /* transform: translate(30px); */
+            } 
+             20%{
+                transform: rotate(80deg);
+                                transform: translate(80px);
+
+            } 
+             50%{
+              
+                transform: rotate(120deg);
+                                /* transform: translate(90px); */
+
+            }
+            80%{
+                transform: rotate(180deg);
+                /* transform: translate(50px); */
+            } 
+             100%{
+                transform: rotate(2000deg);
+                /* transform: translate(20px); */
+            }  
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>

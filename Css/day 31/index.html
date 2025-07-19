@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: brown;
+        }
+        /* @media screen and (orientation:landscape) {
+            body{
+                border: 2px solid orange;
+            }
+            } */
+
+            
+        @media screen and (orientation:landscape) {
+            body{
+                border: 2px solid orange;
+                background-color: orange;
+            }
+        }
+        @media only screen and (max-width:448px)
+        {
+            body{
+                background-color: rgb(0, 0, 0);
+            }
+            .continer{
+                flex-direction: column;
+            }
+        }
+        .continer{
+            display: flex;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid blue;
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        i am a red man
+    </div>
+    <div class="continer">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
